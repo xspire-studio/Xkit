@@ -13,7 +13,7 @@ define( 'XKIT_THEME_NAME', 'Xkit' );
 define( 'XKIT_THEME_VERSION', '1.0' );
 define( 'XKIT_THEME_DEBUG', true );
 
-echo 'dfdgdsgdsfg';
+echo 'dfdgdsgd55555sfg';
 
 /*
  * LOAD FRAMEWORK
