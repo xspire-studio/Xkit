@@ -18,6 +18,8 @@ echo 'Updated upstream';
 
 echo 'Update sasha';
 
+echo 'Update plx';
+
 
 /*
  * LOAD FRAMEWORK
