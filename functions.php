@@ -13,7 +13,19 @@ define( 'XKIT_THEME_NAME', 'Xkit' );
 define( 'XKIT_THEME_VERSION', '1.0' );
 define( 'XKIT_THEME_DEBUG', true );
 
+<<<<<<< 0164b07e138c385878e26a980c14c0a0f0fc1592
 echo 'dfdgdsgd55555sfg';
+=======
+<<<<<<< Updated upstream 
+echo 'dfdgdsgdsfg';
+>>>>>>> Stashed changes
+
+
+
+
+аві аві аві аві авіа ві
+
+>>>>>>> b0ed990f04e0b30db20d8efd0ca87c472f061d44
 
 /*
  * LOAD FRAMEWORK
