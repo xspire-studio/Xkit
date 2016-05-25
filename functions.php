@@ -16,6 +16,8 @@ define( 'XKIT_THEME_DEBUG', true );
 
 echo 'Updated upstream';
 
+echo 'Update sasha';
+
 
 /*
  * LOAD FRAMEWORK
