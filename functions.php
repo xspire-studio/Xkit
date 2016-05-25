@@ -13,6 +13,7 @@ define( 'XKIT_THEME_NAME', 'Xkit' );
 define( 'XKIT_THEME_VERSION', '1.0' );
 define( 'XKIT_THEME_DEBUG', true );
 
+echo 'dfdgdsgdsfg';
 
 /*
  * LOAD FRAMEWORK
@@ -63,6 +64,9 @@ class Xkit_Theme extends Xkit {
 			remove_action( 'set_current_user', 'bbp_setup_current_user' );
 			add_action( 'init', 'bbp_setup_current_user', 10 );
 		}
+		
+		
+		echo 111111111111111111111111;
 
 
 		/* CORE */
