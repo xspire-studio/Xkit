@@ -32,6 +32,8 @@ require_once( get_template_directory() . '/framework/framework.php' );
  */
 class Xkit_Theme extends Xkit {
 echo '3333333333333';
+
+echo '44444444';
 	public function init() {
 
 		define( 'XKIT_OPTIONS_MODULE_ENABLE', true );
