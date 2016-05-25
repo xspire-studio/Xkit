@@ -1,0 +1,381 @@
+{
+    "key": "group_5655e29b7aa11",
+    "title": "Template: Contact Page",
+    "fields": [
+        {
+            "key": "field_5655e34569e93",
+            "label": "Layout",
+            "name": "contact_layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "style_1": "contact-style-1.png || Style 1",
+                "style_2": "contact-style-2.png || Style 2",
+                "style_3": "contact-style-3.png || Style 3",
+                "style_4": "contact-style-4.png || Style 4"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_5688b3a07592c",
+            "label": "Map",
+            "name": "contact_map",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
+            "key": "field_5655edb689f03",
+            "label": "Shortcode",
+            "name": "contact_short",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 70,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5655edd889f04",
+            "label": "Description",
+            "name": "contact_desc",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5688b400593f8",
+            "label": "Map",
+            "name": "contact_map",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
+            "key": "field_5688b431593f9",
+            "label": "Shortcode",
+            "name": "contact_short",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5688b441593fa",
+            "label": "Description",
+            "name": "contact_desc",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 70,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5688b4b1ea5c5",
+            "label": "Description",
+            "name": "contact_desc",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5688b493ea5c3",
+            "label": "Map",
+            "name": "contact_map",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 70,
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
+            "key": "field_5688b4c3ea5c6",
+            "label": "Shortcode",
+            "name": "contact_short",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5688b5056188c",
+            "label": "Map",
+            "name": "contact_map",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 70,
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
+            "key": "field_5688b4f96188b",
+            "label": "Description",
+            "name": "contact_desc",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5688b50f6188d",
+            "label": "Shortcode",
+            "name": "contact_short",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5655e34569e93",
+                        "operator": "==",
+                        "value": "style_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5655ee2767bfb",
+            "label": "Additional Text",
+            "name": "contact_ad_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "includes\/template-contacts.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1463048208
+}

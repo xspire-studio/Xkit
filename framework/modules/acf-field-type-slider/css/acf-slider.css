@@ -1,0 +1,88 @@
+.acf-field[data-type="slider"] .acf-input{
+	width: auto !important;
+}
+.acf-field[data-type="slider"] .acf-input:after{
+		clear: both;
+		content: "";
+		display: block;
+		line-height: 0;
+}
+.acf-field[data-type="slider"] .acf-input .slider {
+	display: inline-block;
+	border-right: 8px solid #EBEDEF;
+	background: #EBEDEF;
+	position: relative;
+	width: 150px;
+	height: 12px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.acf-field[data-type="slider"] .acf-input .slider + input[type="text"]{
+	display: inline-block;
+	width: 60px;
+	margin-left: 22px;
+	float: left;
+	text-align: center;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.acf-field[data-type="slider"] .acf-input .append-text{
+	display: inline-block;
+	margin-left: 8px;
+	float: left;
+	font-size: 13px;
+	line-height: 20px;
+}
+.acf-field[data-type="slider"] .acf-input .description{
+	clear: both;
+}
+.acf-field[data-type="slider"] .acf-input .slider .ui-state-default,
+.acf-field[data-type="slider"] .acf-input .slider .ui-slider-range{
+	font-weight: normal;
+	color: #555555;
+}
+.acf-field[data-type="slider"] .acf-input .slider .ui-slider-handle {
+	position: absolute;
+	top: -4px;
+	width: 20px;
+	height: 20px;
+	cursor: default;
+	margin-left: -6px;
+	z-index: 2;
+}
+.acf-field[data-type="slider"] .acf-input .slider .ui-slider-handle:after {
+	background: #FFF;
+	content: "\e901";
+	width: 20px;
+	height: 20px;
+	color: #00ADEF;
+	font: 400 normal 20px  'styled-options';
+	text-transform: none;
+
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}		
+.acf-field[data-type="slider"] .acf-input  .slider .ui-slider-range {
+	background: #00ADEF;
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	border: none;
+	z-index: 1;
+
+	-webkt-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}			
+.acf-field[data-type="slider"] .acf-input  .slider .ui-slider-range-min {
+	left: 0;
+}

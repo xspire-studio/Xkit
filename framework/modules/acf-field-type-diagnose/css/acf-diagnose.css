@@ -1,0 +1,21 @@
+/* System Diagnose */
+.acf-field-object-diagnose tr[data-name="name"],
+.acf-field-object-diagnose tr[data-name="required"],
+.acf-field-object-diagnose tr[data-name="conditional_logic"]{
+	display: none;
+}
+
+/* System Diagnose : Render Field */
+.acf-field-diagnose .system-diagnose ul{
+	margin-top: 0;
+}
+.acf-field-diagnose .system-diagnose ul li .error {
+	color: red;
+}
+.acf-field-diagnose .system-diagnose ul li {
+	background-color: #F9F9F9;
+	border: 1px solid #e4e4e4;
+	display: block;
+	margin-bottom: 6px;
+	padding: 6px 10px;
+}

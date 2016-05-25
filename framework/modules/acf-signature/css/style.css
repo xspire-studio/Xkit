@@ -1,0 +1,21 @@
+/* Field Groups */
+.post-type-acf-field-group .wp-list-table{
+	width: auto;
+}
+.post-type-acf-field-group .wp-list-table .column-title{
+	width: 100%;
+}
+.post-type-acf-field-group .wp-list-table td.column-signature{
+	white-space: nowrap;
+}
+.post-type-acf-field-group .wp-list-table td.column-signature .circle{
+	background: #000;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+}

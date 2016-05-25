@@ -1,0 +1,102 @@
+/* Tab: field icon */
+.acf-field-object-tab-options tr[data-name="name"],
+.acf-field-object-tab-options tr[data-name="instructions"],
+.acf-field-object-tab-options tr[data-name="required"],
+.acf-field-object-tab-options tr[data-name="conditional_logic"],
+.acf-field-object-tab-options tr[data-name="wrapper"]{
+	display: none;
+}
+
+	/* icons-pack */
+	.acf-field-object-tab-options .icons-pack > .dashicons{
+		display: inline-block;
+		border: 1px solid #DDDDDD;
+		margin: 4px;
+		padding: 8px;
+		cursor: pointer;
+	}
+	.acf-field-object-tab-options .icons-pack > .dashicons:hover{
+		color: #6F6F6F;
+	}
+	.acf-field-object-tab-options .icons-pack > .dashicons.active{
+		border: 1px solid #0073aa;
+		color: #0073aa;
+	}
+
+/* Tabs front-end */
+.theme_tabs {
+}
+	.theme_tabs > ul {
+		float: left; 
+		width: 114px;
+		margin: 0;
+		padding: 0;
+	}
+	.theme_tabs > ul > li {
+		position: relative;
+		background: #23282D;
+		width: 100%; 
+		min-height: 90px;
+		margin: 0;
+		padding: 0;	
+		text-align: center;
+	}
+	.theme_tabs > ul > li.ui-tabs-active{
+		background: #32373C;
+	}
+	.theme_tabs > ul > li a {
+		display: block;
+		width: 100%;
+		padding: 55px 0 20px;
+		font: 13px 'Open Sans';
+		line-height: 18px;
+		color: rgba(255, 255, 255, 0.75);
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.theme_tabs > ul > li.ui-tabs-active a{
+		color: #ffffff;
+		font-weight: 600;
+	}
+	.theme_tabs > ul > li:not(.ui-tabs-active) a:hover{
+		color: #7A7F84;
+	}
+	.theme_tabs > ul > li a.dashicons:before{
+		position: absolute;
+		top: 16px;
+		left: 0;
+		width: 100%;
+		font: normal normal 30px/30px dashicons;
+	}
+
+	.theme_tabs > .tabs-panel {
+		background: #f9f9f9;
+		float: right;
+		width: -moz-calc(100% - 114px);
+		width: -webkit-calc(100% - 114px);
+		width: calc(100% - 114px);
+	}
+	.theme_tabs > .tabs-panel > .tab{
+		display: none;
+	}
+
+
+@media screen and (max-width: 500px) {
+	.theme_tabs > ul{
+		width: 100%;
+		float: none;
+	}
+	.theme_tabs > ul  > li{
+		min-height: auto;
+	}
+	.theme_tabs > ul  > li a {
+		padding: 12px 0 12px;
+	}
+	.theme_tabs > ul  > li a:before {
+		display: none;
+	}
+	.theme_tabs > .tabs-panel{
+		width: 100%;
+		float: none;
+	}
+}

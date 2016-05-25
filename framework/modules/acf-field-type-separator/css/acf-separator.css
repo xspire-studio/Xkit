@@ -1,0 +1,45 @@
+.acf-field-object.acf-field-object-separator{
+	background: #f7f7f7;
+}
+.acf-field-object-separator tr[data-name="name"],
+.acf-field-object-separator tr[data-name="required"],
+.acf-field-object-separator tr[data-name="wrapper"]{
+	display: none;
+}
+.acf-field-object-separator ul li.li-field-order .acf-icon{
+
+}
+.acf-field-object-separator ul li.li-field-name{
+	opacity: 0;
+}
+.acf-field-object-separator strong a.edit-field{
+	color: #23282d;
+}
+
+/* Separator front-end */
+.acf-fields .acf-field.acf-field-separator{
+	border-top: none !important;
+	background: #00ADEF !important;
+	padding: 0 12px !important;
+}
+.acf-fields .acf-field.acf-field.acf-field-separator:before{
+	opacity: 0;
+}
+.acf-fields .acf-field.acf-field-separator .acf-label{
+	width: 100% !important;
+	margin: 0;
+	padding: 10px 12px;
+}
+.acf-fields .acf-field.acf-field-separator .acf-label label{
+	margin: 0;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	color: #fff;
+	cursor: default;
+}
+.acf-fields .acf-field.acf-field-separator .acf-label p.description{
+	color: #fff;
+}
+.acf-fields .acf-field.acf-field-separator .acf-input{
+	display: none;
+}

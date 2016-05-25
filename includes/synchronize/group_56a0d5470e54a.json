@@ -1,0 +1,149 @@
+{
+    "key": "group_56a0d5470e54a",
+    "title": "Page options",
+    "fields": [
+        {
+            "key": "field_56a0d55a04e56",
+            "label": "Show \/ Hide Options",
+            "name": "post_settings",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_56b8932ac246a",
+            "label": "",
+            "name": "",
+            "type": "separator",
+            "instructions": "<span>NOTICE:<\/span> Alternative settings for this post. These settings override options on Theme Options!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56a0d55a04e56",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "style_css": "{\r\n\tpadding: 2px 0 !important;\r\n}\r\n + .acf-field{\r\n\tborder-top: none !important;\r\n}\r\n.description {\r\n\tfont-size: 13px !important;\r\n\tmargin-top: 2px !important;\r\n\tpadding: 1px 0 !important;\r\n}\r\n.description span {\r\n\tfont-weight: 600 !important;\r\n}"
+        },
+        {
+            "key": "field_56a0d56704e57",
+            "label": "Sidebar",
+            "name": "post_sidebar",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56a0d55a04e56",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "left-sidebar.png || Left sidebar",
+                "right": "right-sidebar.png || Right sidebar",
+                "two": "two-sidebar.png || Two sidebars",
+                "without": "without-sidebar.png || Without sidebar"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_56a0d5c504e59",
+            "label": "Display Title?",
+            "name": "post_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56a0d55a04e56",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_56a0d5b204e58",
+            "label": "Display Breadcrumbs?",
+            "name": "post_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56a0d55a04e56",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "posts_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1463050069
+}

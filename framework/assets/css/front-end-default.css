@@ -1,0 +1,63 @@
+/* snippet - Like */
+.box-like{
+	cursor: default;
+	color: #434343;
+	opacity: 0.7;
+}
+.box-like.actived{
+	opacity: 1;
+}
+.box-like.liked{
+	color: #000000;
+}
+.box-like.actived > .plus,
+.box-like.actived > .up,
+.box-like.actived > .down{
+	cursor: pointer;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.box-like > .plus{
+	color: #D9534F;
+}
+.box-like > .up{
+	color: #1D9D74;
+}
+.box-like > .down{
+	color: #D9534F;
+}
+.box-like.actived > .plus:hover,
+.box-like.actived > .up:hover,
+.box-like.actived > .down:hover{
+	opacity: 0.7;
+}
+
+/* snippet - Rating */
+.box-rating{
+	opacity: 0.7;
+}
+.box-rating.actived{
+	opacity: 1;
+}
+.box-rating .stars .fa{
+	cursor: default;
+	color: #FFD203;
+}
+.box-rating.actived .stars .fa{
+	cursor: pointer;
+}
+.box-rating .stars.move .fa{
+	color: #FF9100;
+}
+.box-rating .stars.move .fa:before{
+	content: '\f005';
+}
+.box-rating.actived .stars .fa:hover ~ .fa{
+	color: #FFD203;
+}
+.box-rating.actived .stars .fa:hover ~ .fa:before{
+	content: '\f006' !important;
+}

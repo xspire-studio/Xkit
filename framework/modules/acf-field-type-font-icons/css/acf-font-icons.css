@@ -1,0 +1,126 @@
+/* Icons : field icon */
+.acf-field-object-font-icons tr[data-name="required"]{
+	display: none;
+}
+
+	/* object icons-container */
+	.acf-field-object-font-icons .icons-container{
+		overflow-y: scroll;
+		height: 300px;
+	}
+	.acf-field-object-font-icons .icons-container > h3{
+		position: relative;
+		display: block;
+		font-size: 14px;
+		margin-bottom: 12px;
+		margin-left: 2px;
+		margin-right: 18px;
+		overflow: hidden;
+		text-transform: uppercase;
+	}
+	.acf-field-object-font-icons .icons-container > h3:after{
+		background: #444444;
+		position: absolute;
+		top: 0.6em;
+		width: 100%;
+		height: 1px;
+		margin-left: 16px;
+		content: '';
+	}
+	.acf-field-object-font-icons .icons-container > .item{
+		display: inline-block;
+		border: 1px solid #DDDDDD;
+		min-height: 18px;
+		width: 19px;
+		margin: 4px;
+		padding: 8px;
+		cursor: pointer;
+		font-size: 18px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.acf-field-object-font-icons .icons-container > .item:hover{
+		color: #6F6F6F;
+	}
+	.acf-field-object-font-icons .icons-container > .item.active{
+		border: 1px solid #0073aa;
+		color: #0073aa;
+	}
+
+
+/* Render Field Icons */
+.acf-render-field[data-name="icon-packs"] .icon-preview{
+	display: block;
+	float: left;
+}
+.acf-render-field[data-name="icon-packs"] .icon-preview i{
+	display: inline-block;
+	width: 21px;
+	margin: 5px 16px 8px 10px;
+	cursor: pointer;
+	color: #0073aa;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+.acf-render-field[data-name="icon-packs"] input{
+	border: 1px solid #5B9DD9;
+	display: inline-block;
+	float: left;
+	background: #FFF;
+	height: 29px;
+	margin-left: 3px;
+	padding: 0 9px;
+	line-height: 29px;
+
+	width: -webkit-calc(100% - 50px);
+	width: -moz-calc(100% - 50px);
+	width: calc(100% - 50px);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.acf-render-field[data-name="icon-packs"] .icons-container{
+	height: 279px;
+	margin-top: 10px;
+	overflow-y: scroll;
+}
+.acf-render-field[data-name="icon-packs"] .icons-container > h3{
+	position: relative;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 12px;
+	margin-left: 2px;
+	margin-right: 18px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+.acf-render-field[data-name="icon-packs"] .icons-container > h3:after{
+	background: #444444;
+	position: absolute;
+	top: 0.6em;
+	width: 100%;
+	height: 1px;
+	margin-left: 16px;
+	content: '';
+}
+.acf-render-field[data-name="icon-packs"] .icons-container > .item{
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	min-height: 18px;
+	width: 21px;
+	margin: 3px;
+	padding: 7px;
+	cursor: pointer;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+}
+.acf-render-field[data-name="icon-packs"] .icons-container > .item:hover{
+	color: #6F6F6F;
+}
+.acf-render-field[data-name="icon-packs"] .icons-container > .item.active{
+	border: 1px solid #0073aa;
+	color: #0073aa;
+}

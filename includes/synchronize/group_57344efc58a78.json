@@ -1,0 +1,143 @@
+{
+    "key": "group_57344efc58a78",
+    "title": "Single Product Options",
+    "fields": [
+        {
+            "key": "field_57344efc6c7fa",
+            "label": "Show \/ Hide Options",
+            "name": "post_settings",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_57344efc6c407",
+            "label": "",
+            "name": "123",
+            "type": "separator",
+            "instructions": "<span>NOTICE:<\/span> Alternative settings for this post. These settings override options on Theme Options!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57344efc6c7fa",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "style_css": "{\r\n\tpadding: 2px 0 !important;\r\n}\r\n + .acf-field{\r\n\tborder-top: none !important;\r\n}\r\n.description {\r\n\tfont-size: 13px !important;\r\n\tmargin-top: 2px !important;\r\n\tpadding: 1px 0 !important;\r\n}\r\n.description span {\r\n\tfont-weight: 600 !important;\r\n}"
+        },
+        {
+            "key": "field_57344efc6ce50",
+            "label": "Sidebar",
+            "name": "post_sidebar",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57344efc6c7fa",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "left-sidebar.png || Left sidebar",
+                "right": "right-sidebar.png || Right sidebar",
+                "without": "without-sidebar.png || Without sidebar"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_57344f70ea0bd",
+            "label": "Display Title?",
+            "name": "post_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57344efc6c7fa",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_57345051ea0be",
+            "label": "Display Breadcrumbs?",
+            "name": "post_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57344efc6c7fa",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1463049985
+}

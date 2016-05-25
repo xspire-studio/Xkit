@@ -1,0 +1,270 @@
+{
+    "key": "group_567ee1eee1a27",
+    "title": "Archive Options: Blog",
+    "fields": [
+        {
+            "key": "field_56bcfd3d96328",
+            "label": "Show \/ Hide Options",
+            "name": "archive_options",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_56b851caa87d9",
+            "label": "",
+            "name": "",
+            "type": "separator",
+            "instructions": "<span>NOTICE:<\/span> Alternative settings. These settings override options on Theme Options!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "style_css": "{\r\n\tpadding: 2px 0 !important;\r\n}\r\n + .acf-field{\r\n\tborder-top: none !important;\r\n}\r\n.description {\r\n\tfont-size: 13px !important;\r\n\tmargin-top: 2px !important;\r\n\tpadding: 1px 0 !important;\r\n}\r\n.description span {\r\n\tfont-weight: 600 !important;\r\n}"
+        },
+        {
+            "key": "field_56bd002729ce6",
+            "label": "Sidebar",
+            "name": "archive_sidebar",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "left-sidebar.png || Left sidebar",
+                "right": "right-sidebar.png || Right sidebar",
+                "two": "two-sidebar.png || Two sidebars",
+                "without": "without-sidebar.png || Without sidebar"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_56bcfb4722f09",
+            "label": "Display Title?",
+            "name": "archive_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_56bcfd2396327",
+            "label": "Display Breadcrumbs?",
+            "name": "archive_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_567ee20e6490f",
+            "label": "Posts Layout",
+            "name": "archive_posts_layout",
+            "type": "radio",
+            "instructions": "Use this option to force layout for this Category.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full": "grid-full.png || Full 100%",
+                "grid_3": "grid-3-col-post.png || Grid 3 columns",
+                "grid_2": "grid-2-col-post.png || Grid 2 columns",
+                "list": "list.png || List"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "grid_3",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_5683ab2243e35",
+            "label": "Posts Layout Style",
+            "name": "archive_posts_sub_layout",
+            "type": "radio",
+            "instructions": "Use this option to force layout style for this Category.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_567ee20e6490f",
+                        "operator": "==",
+                        "value": "grid_3"
+                    },
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_567ee20e6490f",
+                        "operator": "==",
+                        "value": "grid_2"
+                    },
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "standart": "grid-3-col.png || Standart",
+                "masonry": "grid-masonry.png || Masonry"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_56bd017729ce7",
+            "label": "Pagination",
+            "name": "archive_pagination",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bcfd3d96328",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "load_more": "Ajax Load More Button",
+                "standart": "Standart Pagination",
+                "infinite": "Infinite Scroll Pagination",
+                "default": "Next\/Previous Buttons Pagination"
+            },
+            "default_value": [
+                "load_more"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "category"
+            }
+        ],
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "posts_page"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1464092759
+}

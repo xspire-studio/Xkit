@@ -1,0 +1,459 @@
+{
+    "key": "group_569b908b6e1f4",
+    "title": "Post Options",
+    "fields": [
+        {
+            "key": "field_569b90d76e7b0",
+            "label": "Show \/ Hide Options",
+            "name": "post_settings",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_56b512fd05147",
+            "label": "",
+            "name": "",
+            "type": "separator",
+            "instructions": "<span>NOTICE:<\/span> Alternative settings for this post. These settings override options on Theme Options!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "style_css": "{\r\n\tpadding: 2px 0 !important;\r\n}\r\n + .acf-field{\r\n\tborder-top: none !important;\r\n}\r\n.description {\r\n\tfont-size: 13px !important;\r\n\tmargin-top: 2px !important;\r\n\tpadding: 1px 0 !important;\r\n}\r\n.description span {\r\n\tfont-weight: 600 !important;\r\n}"
+        },
+        {
+            "key": "field_569b940954b25",
+            "label": "Sidebar",
+            "name": "post_sidebar",
+            "type": "radio",
+            "instructions": "Use this option to force sidebar for Single Posts.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "left-sidebar.png || Left sidebar",
+                "right": "right-sidebar.png || Right sidebar",
+                "two": "two-sidebar.png || Two sidebars",
+                "without": "without-sidebar.png || Without sidebar"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_5732eda5ed482",
+            "label": "Display Title?",
+            "name": "post_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_569b916fa5f0b",
+            "label": "Display Breadcrumbs?",
+            "name": "post_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Using this option you can remove This Post Breadcrumbs.",
+            "default_value": 1
+        },
+        {
+            "key": "field_569b91d6a5f0c",
+            "label": "Display Meta Section?",
+            "name": "post_meta_section",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Using this option you can show\/hide extra information about the This Post, such as Author, Date Created.",
+            "default_value": 1
+        },
+        {
+            "key": "field_56addee152e64",
+            "label": "Show Post Rating",
+            "name": "post_like",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_56addf1152e65",
+            "label": "Rating Style",
+            "name": "post_like_style",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_56addee152e64",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "heart": "Heart",
+                "hands": "Hands",
+                "ratting": "Rating"
+            },
+            "style_images": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "heart",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_569b947d54b26",
+            "label": "Display Tagcloud?",
+            "name": "post_tagcloud",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Using this option you can show\/hide Tagcloud.",
+            "default_value": 1
+        },
+        {
+            "key": "field_569b94b454b27",
+            "label": "Social Share",
+            "name": "post_social",
+            "type": "checkbox",
+            "instructions": "Using this option you can select Social Share button.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "google": "Google +",
+                "linkedin": "Linkedin",
+                "pinterest": "Pinterest",
+                "vkontakte": "Vkontakte",
+                "odnoklassniki": "Odnoklassniki",
+                "mailru": "Mail.ru",
+                "reddit": "Reddit",
+                "tumblr": "Tumblr"
+            },
+            "default_value": {
+                "facebook": "facebook",
+                "twitter": "twitter",
+                "google": "google",
+                "linkedin": "linkedin"
+            },
+            "layout": "horizontal",
+            "toggle": 0
+        },
+        {
+            "key": "field_569b94f354b28",
+            "label": "Show Above Banner",
+            "name": "post_above_banner",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_569b951354b29",
+            "label": "Custom Above Banner",
+            "name": "post_above_banner_code",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_569b94f354b28",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_569b958954b2c",
+            "label": "Show Below Banner",
+            "name": "post_below_banner",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_569b95ac54b2d",
+            "label": "Custom Below Banner",
+            "name": "post_below_banner_code",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_569b958954b2c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_569b95cd54b2e",
+            "label": "Show Author Box",
+            "name": "post_author",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_569b95df54b2f",
+            "label": "Show Related Posts",
+            "name": "post_related",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_569b90d76e7b0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1463048144
+}

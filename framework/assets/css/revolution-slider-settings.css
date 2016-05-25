@@ -1,0 +1,204 @@
+/*-----------------------------------------------------------------------------
+	Edit default revolution slider settings
+-----------------------------------------------------------------------------*/
+
+.tp-button.small{
+	background: #0099ff !important;
+	padding: 0px 30px !important;
+	text-transform: uppercase !important;
+	color: #fff !important;
+	font: 600 16px/60px "Open Sans", Helvetica, Arial, sans-serif !important;
+	height: 60px;
+	display: block;
+	text-shadow: none !important;
+	text-decoration: none !important;
+	
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.tp-button.small:hover{
+	background: #17B0FF !important;
+}
+
+
+/* RED */
+.tp-button.red, 
+.purchase.red{
+	background: #E74B32 !important;
+}
+
+.tp-button.red:hover,
+.purchase.red:hover{
+	background: #FF7057 !important;
+}
+
+
+/* RED */
+.tp-button.green, 
+.purchase.green{
+	background: #057A05 !important;
+}
+
+.tp-button.green:hover,
+.purchase.green:hover{
+	background: #2DA22D !important;
+}
+
+
+/* ORANGE */
+.tp-button.orange, 
+.purchase.orange{
+	background: #FFA500 !important;
+}
+
+.tp-button.orange:hover,
+.purchase.orange:hover{
+	background: #FFC621 !important;
+}
+
+
+/* DARK GREY */
+.tp-button.darkgrey, 
+.purchase.darkgrey{
+	background: #808080 !important;
+}
+
+.tp-button.darkgrey:hover,
+.purchase.darkgrey:hover{
+	background: #AAAAAA !important;
+}
+
+
+/* LIGHT GREY */
+.tp-button.lightgrey, 
+.purchase.lightgrey{
+	background: #F6F6F6 !important;
+	color: #949494 !important;
+	border: 2px solid #949494 !important;
+	height: 56px !important;
+	line-height: 56px !important;
+	padding: 0 28px !important;
+}
+
+.tp-button.lightgrey:hover,
+.purchase.lightgrey:hover{
+	background: #FBFBFB !important;
+}
+
+
+/* ARROWS */
+.tp-leftarrow.default,
+.tp-rightarrow.default{
+	background: transparent !important;
+	border: 2px solid #8b8b8b !important;
+		
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-transition: border 0.2s ease-out; 
+	-moz-transition: border 0.2s ease-out; 
+	-o-transition: border 0.2s ease-out; 
+	-ms-transition: border 0.2s ease-out;
+	transition: border 0.2s ease-out;
+}
+.tp-leftarrow.default:before,
+.tp-rightarrow.default:before{
+    font-family: "Defaults";
+	font-size: 34px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 38px;
+    text-transform: none;
+	color: #8b8b8b;
+	
+	content: " ";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 40px;
+	text-align: center;
+	
+	-webkit-transition: color 0.2s ease-out; 
+	-moz-transition: color 0.2s ease-out; 
+	-o-transition: color 0.2s ease-out; 
+	-ms-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
+}
+.tp-leftarrow.default:before{	
+	content: "";
+	width: 37px;
+}
+.tp-rightarrow.default:before{	
+	content: "";
+	width: 43px;
+}
+.tp-leftarrow.default:hover,
+.tp-rightarrow.default:hover{
+	border-color: #ACACAC !important;
+}
+.tp-leftarrow.default:hover:before,
+.tp-rightarrow.default:hover:before{
+	color: #ACACAC;
+}
+
+
+/* BULLETS */
+.tp-bullets{
+	bottom: 25px !important;
+}
+.tp-bullets.simplebullets.round .bullet{
+	background: #A6A6A6 !important;
+	width: 10px !important;
+	height: 10px !important;
+	margin-left: 6px !important;
+	
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
+.tp-bullets.simplebullets.round .bullet.last	{
+	margin-right: 6px !important;
+}
+.tp-bullets.simplebullets .bullet:hover,
+.tp-bullets.simplebullets .bullet.selected{
+	background: #0099ff !important;
+}
+
+
+
+/* ADAPTIVE */
+/* ExtraSmall (screen < 768px) */
+@media (max-width: 767px) {
+
+}
+
+/* Small (screen > 768px) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.tp-button.small{
+		padding: 0px 20px !important;
+		font: 600 15px/40px "Open Sans", Helvetica, Arial, sans-serif !important;
+		height: 40px;
+	}
+	.tp-button.lightgrey, .purchase.lightgrey {
+		height: 36px !important;
+		line-height: 36px !important;
+		padding: 0 18px !important;
+	}
+}
+
+/* Medium (screen > 992px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Medium (screen > 1200px) */
+@media (min-width: 1200px) {
+
+}

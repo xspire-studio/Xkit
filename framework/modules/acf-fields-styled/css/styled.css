@@ -1,0 +1,391 @@
+@font-face {
+	font-family: 'styled-options';
+	src:url('../fonts/styled-options.eot?1d8ba8');
+	src:url('../fonts/styled-options.eot?1d8ba8#iefix') format('embedded-opentype'),
+		url('../fonts/styled-options.ttf?1d8ba8') format('truetype'),
+		url('../fonts/styled-options.woff?1d8ba8') format('woff'),
+		url('../fonts/styled-options.svg?1d8ba8#styled-options') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*
+*  ACF Styled Input
+*/
+
+/* styled_radio */
+.acf-field[data-name="conditional_logic"] li,
+.acf-field[data-type="radio"] li{
+	margin-bottom: 8px;
+}	
+.acf-field[data-name="conditional_logic"] ul.acf-hl.acf-styled-radio-list li,
+.acf-field[data-type="radio"] ul.acf-hl.acf-styled-radio-list li{
+	clear: none;
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+.acf-field[data-name="conditional_logic"] li label,
+.acf-field[data-type="radio"] li label{
+	display: inline-block;
+	position: relative;
+	min-height: 24px;
+	padding-left: 32px;
+	font-style: normal !important;
+	color: #444 !important;
+	
+	-webkit-transition: color 0.25s linear 0s;
+	-moz-transition: color 0.25s linear 0s;
+	transition: color 0.25s linear 0s;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"],
+.acf-field[data-type="radio"] li label input[type="radio"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	width: 20px;
+}
+.acf-field[data-name="conditional_logic"] li label .icons,
+.acf-field[data-type="radio"] li label .icons { 
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	color: #bdc3c7;
+	text-align: center;	
+}
+.acf-field[data-name="conditional_logic"] li label .icons .icon-checked,
+.acf-field[data-name="conditional_logic"] li label .icons .icon-unchecked,
+.acf-field[data-type="radio"] li label .icons .icon-checked,
+.acf-field[data-type="radio"] li label .icons .icon-unchecked {
+	background-color: transparent;
+	display: inline-table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	opacity: 1;
+	
+	-webkit-transition: color 0.25s linear 0s;
+	-moz-transition: color 0.25s linear 0s;
+	transition: color 0.25s linear 0s;
+}
+.acf-field[data-name="conditional_logic"] li label .icons .icon-checked,
+.acf-field[data-type="radio"] li label .icons .icon-checked{
+	opacity: 0;
+}
+.acf-field[data-name="conditional_logic"] li label .icons .icon-checked:before,
+.acf-field[data-name="conditional_logic"] li label .icons .icon-unchecked:before,
+.acf-field[data-type="radio"] li label .icons .icon-checked:before,
+.acf-field[data-type="radio"] li label .icons .icon-unchecked:before{
+	font-family: 'styled-options';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	text-transform: none;
+}
+.acf-field[data-name="conditional_logic"] li label .icons .icon-checked:before,
+.acf-field[data-type="radio"] li label .icons .icon-checked:before {
+	content: "\e901";
+}
+.acf-field[data-name="conditional_logic"] li label .icons .icon-unchecked:before,
+.acf-field[data-type="radio"] li label .icons .icon-unchecked:before {
+	content: "\e900";
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked,
+.acf-field[data-type="radio"] li label input[type="radio"]:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked {
+	opacity: 0;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:hover:not(.nohover):not(:disabled) + .icons .icon-checked,
+.acf-field[data-type="radio"] li label input[type="radio"]:hover:not(.nohover):not(:disabled) + .icons .icon-checked {
+	opacity: 1;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:checked + .icons,
+.acf-field[data-type="radio"] li label input[type="radio"]:checked + .icons {
+	color: #00ADEF;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:checked + .icons .icon-unchecked,
+.acf-field[data-type="radio"] li label input[type="radio"]:checked + .icons .icon-unchecked {
+	opacity: 0;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:checked + .icons .icon-checked,
+.acf-field[data-type="radio"] li label input[type="radio"]:checked + .icons .icon-checked {
+	opacity: 1;
+	color: #00ADEF;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:disabled + .icons,
+.acf-field[data-type="radio"] li label input[type="radio"]:disabled + .icons {
+	color: #e6e8ea;
+	cursor: default;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:disabled + .icons .icon-unchecked,
+.acf-field[data-type="radio"] li label input[type="radio"]:disabled + .icons .icon-unchecked {
+	opacity: 1;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:disabled + .icons .icon-checked,
+.acf-field[data-type="radio"] li label input[type="radio"]:disabled + .icons .icon-checked {
+	opacity: 0;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:disabled:checked + .icons,
+.acf-field[data-type="radio"] li label input[type="radio"]:disabled:checked + .icons {
+	color: #e6e8ea;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:disabled:checked + .icons .icon-unchecked,
+.acf-field[data-type="radio"] li label input[type="radio"]:disabled:checked + .icons .icon-unchecked {
+	opacity: 0;
+}
+.acf-field[data-name="conditional_logic"] li label input[type="radio"]:disabled:checked + .icons .icon-checked,
+.acf-field[data-type="radio"] li label input[type="radio"]:disabled:checked + .icons .icon-checked {
+	color: #e6e8ea;
+	opacity: 1;
+}
+
+
+
+/* styled_checkbox */
+.acf-field[data-type="checkbox"] li{
+	margin-bottom: 8px;
+}
+.acf-field[data-type="checkbox"] ul.acf-hl.acf-checkbox-list li{
+	clear: none;
+	margin-right: 20px;
+	margin-bottom: 0;
+}	
+.acf-field[data-type="checkbox"] li label{
+	display: inline-block;
+	position: relative;
+	min-height: 24px;
+	padding-left: 32px;
+	font-style: normal !important;
+	color: #444 !important;
+	
+	-webkit-transition: color 0.25s linear 0s;
+	-moz-transition: color 0.25s linear 0s;
+	transition: color 0.25s linear 0s;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	width: 20px;
+}
+.acf-field[data-type="checkbox"] li label .icons { 
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	color: #bdc3c7;
+	text-align: center;	
+}
+.acf-field[data-type="checkbox"] li label .icons .icon-checked,
+.acf-field[data-type="checkbox"] li label .icons .icon-unchecked {
+	background-color: transparent;
+	display: inline-table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	opacity: 1;
+	
+	-webkit-transition: color 0.25s linear 0s;
+	-moz-transition: color 0.25s linear 0s;
+	transition: color 0.25s linear 0s;
+}
+.acf-field[data-type="checkbox"] li label .icons .icon-checked{
+	opacity: 0;
+}
+.acf-field[data-type="checkbox"] li label .icons .icon-checked:before,
+.acf-field[data-type="checkbox"] li label .icons .icon-unchecked:before {
+	font-family: 'styled-options';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	text-transform: none;
+}
+.acf-field[data-type="checkbox"] li label .icons .icon-checked:before {
+	content: "\e903";
+}
+.acf-field[data-type="checkbox"] li label .icons .icon-unchecked:before {
+	content: "\e902";
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:hover:not(.nohover):not(:disabled) + .icons .icon-unchecked {
+	opacity: 0;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:hover:not(.nohover):not(:disabled) + .icons .icon-checked {
+	opacity: 1;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:checked + .icons {
+	color: #00ADEF;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:checked + .icons .icon-unchecked {
+	opacity: 0;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:checked + .icons .icon-checked {
+	opacity: 1;
+	color: #00ADEF;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:disabled + .icons {
+	color: #e6e8ea;
+	cursor: default;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:disabled + .icons .icon-unchecked {
+	opacity: 1;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:disabled + .icons .icon-checked {
+	opacity: 0;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:disabled:checked + .icons {
+	color: #e6e8ea;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:disabled:checked + .icons .icon-unchecked {
+	opacity: 0;
+}
+.acf-field[data-type="checkbox"] li label input[type="checkbox"]:disabled:checked + .icons .icon-checked {
+	color: #e6e8ea;
+	opacity: 1;
+}
+
+
+
+/* styled_true_false */
+.acf-field[data-type="true_false"] li label input[type="checkbox"] {
+	position: absolute;
+	margin-left: -9999px;
+	visibility: hidden;
+}
+
+.acf-field[data-type="true_false"] li label input[type="checkbox"] + .toggle {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.acf-field[data-type="true_false"] li label input[type="checkbox"] + .toggle {
+	padding: 0;
+	width: 42px;
+	height: 22px;
+	background-color: #bdc3c7;
+
+	-webkit-border-radius: 42px;
+	-moz-border-radius: 42px;
+	border-radius: 42px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	transition: background 0.4s;
+}
+.acf-field[data-type="true_false"] li label input[type="checkbox"] + .toggle:before,
+.acf-field[data-type="true_false"] li label input[type="checkbox"] + .toggle:after {
+	display: block;
+	position: absolute;
+	content: "";
+}
+.acf-field[data-type="true_false"] li label input[type="checkbox"] + .toggle:before {
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	right: 2px;
+
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	transition: background 0.4s;
+}
+.acf-field[data-type="true_false"] li label input[type="checkbox"] + .toggle:after {
+	top: 3px;
+	left: 3px;
+	bottom: 3px;
+	width: 16px;
+	background-color: #fff;
+
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+
+	-webkit-transition: margin 0.4s, background 0.4s;
+	-moz-transition: margin 0.4s, background 0.4s;
+	transition: margin 0.4s, background 0.4s;
+}
+.acf-field[data-type="true_false"] li label input[type="checkbox"]:checked + .toggle {
+	background-color: #00ADEF;
+}
+.acf-field[data-type="true_false"] li label input[type="checkbox"]:checked + .toggle:after {
+	margin-left: 20px;
+}
+
+
+
+/* styled_radio_images */
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label{
+	display: inline-block;
+	margin: 0 4px 8px 0;
+	padding-left: 0;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images.acf-hl li label{
+	width: 82px;
+	text-align: center;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label input[type="radio"]{
+	display: none;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label input[type="radio"] + img{
+	background: #f0f2f4;
+	border: 3px solid #FFF;
+	opacity: 0.8;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images.acf-hl li label input[type="radio"] + img{
+	padding: 15px;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label input[type="radio"] + img:hover{
+	opacity: 1;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label input[type="radio"]:checked + img {
+	border: 3px solid #00ADEF;
+	opacity: 1;
+}
+.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label .img-caption{
+	display: block;
+	margin-bottom: 8px;
+}
+	
+
+/*
+*  ACF Group
+*/
+.post-type-acf-field-group .acf-field[data-name="conditional_logic"] li label,
+.post-type-acf-field-group .acf-field[data-type="radio"] li label,
+.post-type-acf-field-group .acf-field[data-type="checkbox"] li label{
+	padding-left: 30px;
+}
+
+
+@media screen and (max-width: 992px) {
+	.acf-field[data-type="radio"] .acf-styled-radio-list.style-images li label input[type="radio"] + img{
+		width: 100%;
+	}
+}

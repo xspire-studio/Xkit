@@ -1,0 +1,356 @@
+{
+    "key": "group_567f8e9dc7bc1",
+    "title": "Archive Options: Shop",
+    "fields": [
+        {
+            "key": "field_5732ef65119dd",
+            "label": "Show \/ Hide Options",
+            "name": "archive_options",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_5732efb9119de",
+            "label": "",
+            "name": "",
+            "type": "separator",
+            "instructions": "<span>NOTICE:<\/span> Alternative settings. These settings override options on Theme Options!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "style_css": "{\r\n\tpadding: 2px 0 !important;\r\n}\r\n + .acf-field{\r\n\tborder-top: none !important;\r\n}\r\n.description {\r\n\tfont-size: 13px !important;\r\n\tmargin-top: 2px !important;\r\n\tpadding: 1px 0 !important;\r\n}\r\n.description span {\r\n\tfont-weight: 600 !important;\r\n}"
+        },
+        {
+            "key": "field_5732eff3119df",
+            "label": "Sidebar",
+            "name": "archive_sidebar",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "left-sidebar.png || Left sidebar",
+                "right": "right-sidebar.png || Right sidebar",
+                "without": "without-sidebar.png || Without sidebar"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_573456b841d8a",
+            "label": "Display Title?",
+            "name": "archive_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_573456d441d8b",
+            "label": "Display Breadcrumbs?",
+            "name": "archive_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_567f8ec514049",
+            "label": "Posts Layout",
+            "name": "archive_posts_layout",
+            "type": "radio",
+            "instructions": "Use this option to force layout for this Product Category.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "grid_4": "grid-4-col.png || Grid 4 columns",
+                "grid_3": "grid-3-col.png || Grid 3 columns",
+                "grid_2": "grid-2-col.png || Grid 2 columns"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_56b706ac2e8ca",
+            "label": "Per Page",
+            "name": "archive_per_page",
+            "type": "select",
+            "instructions": "Number of Products Items Per Page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_567f8ec514049",
+                        "operator": "==",
+                        "value": "grid_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": 2,
+                "4": 4,
+                "6": 6,
+                "8": 8,
+                "10": 10,
+                "12": 12,
+                "14": 14,
+                "16": 16,
+                "18": 18,
+                "20": 20,
+                "22": 22,
+                "24": 24
+            },
+            "default_value": [
+                2
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_56b706932e8c9",
+            "label": "Per Page",
+            "name": "archive_per_page",
+            "type": "select",
+            "instructions": "Number of Products Items Per Page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_567f8ec514049",
+                        "operator": "==",
+                        "value": "grid_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "3": 3,
+                "6": 6,
+                "9": 9,
+                "12": 12,
+                "15": 15,
+                "18": 18,
+                "21": 21,
+                "24": 24
+            },
+            "default_value": [
+                3
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_567fe0e70bdf7",
+            "label": "Per Page",
+            "name": "archive_per_page",
+            "type": "select",
+            "instructions": "Number of Products Items Per Page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_567f8ec514049",
+                        "operator": "==",
+                        "value": "grid_4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "4": 4,
+                "8": 8,
+                "12": 12,
+                "16": 16,
+                "20": 20,
+                "24": 24
+            },
+            "default_value": [
+                4
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_574446180c1c5",
+            "label": "Pagination",
+            "name": "archive_pagination",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732ef65119dd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "load_more": "Ajax Load More Button",
+                "standart": "Standart Pagination",
+                "infinite": "Infinite Scroll Pagination",
+                "default": "Next\/Previous Buttons Pagination"
+            },
+            "default_value": [
+                "load_more"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product_cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1464092271
+}

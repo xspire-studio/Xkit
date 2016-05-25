@@ -1,0 +1,152 @@
+/* Social share */
+.social-share ul{
+	list-style: none;
+	margin-right: -3.5px;
+	margin-left: -3.5px;
+}
+.social-share li{
+	float: left;
+	margin-right: 3.5px;
+	margin-bottom: 7px;
+	margin-left: 3.5px;
+}
+.social-share ul li:before{
+	content: none;
+	padding: 0;
+}
+.social-share li a{
+	list-style: none;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+}
+.social-share li a:hover{
+	text-decoration: none;
+}
+
+
+/* Default style */
+.social-share.default li a{
+	color: #fff;
+}
+.social-share.default .social-icon{
+	display: block;
+	font-size: 16px;
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	background: #db9461;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.social-share.default .share-item{
+	opacity: 0.9;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.social-share.default .share-item:hover{
+	opacity: 0.5;
+}
+.social-share.default .total-counter{
+	display: block;
+	position: relative;
+	float: left;
+	background: #f7f7f7;
+	color: #434343;
+	height: 27px;
+	font-size: 14px;
+	line-height: 27px;
+	padding: 0 22px;
+	margin-left: 11px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.social-share.default .total-counter:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	left: -7px;
+	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 7px solid #ebebeb;
+}
+.social-share.default .total-counter:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	left: -6px;
+	width: 0; 
+	height: 0; 
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 7px solid #f7f7f7;
+}
+
+/*.social-share.default li.facebook .social-icon{background-color: #607bb3;}
+.social-share.default li.twitter .social-icon{background-color: #53c4ee;}
+.social-share.default li.google .social-icon{background-color: #e74b32;}
+.social-share.default li.vkontakte .social-icon{background-color: #5894cc;}
+.social-share.default li.pinterest .social-icon{background-color: #cc2127;}
+.social-share.default li.odnoklassniki .social-icon{background-color: #f48420;}
+.social-share.default li.mailru .social-icon{background-color: #004e9c;}
+.social-share.default li.linkedin .social-icon{background-color: #007ab9;}
+.social-share.default li.reddit .social-icon{background-color: #ff4500;}
+.social-share.default li.tumblr .social-icon{background-color: #395976;}*/
+
+
+/* Default style */
+.social-share.flat li a{
+	color: #fff;
+}
+.social-share.flat .share-item{
+	opacity: 1;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.social-share.flat .share-item a{
+	background-color: #607bb3;
+}
+.social-share.flat .share-item:hover{
+	opacity: 0.8;
+}
+.social-share.flat .social-icon{
+	display: block;
+	float: left;
+	font-size: 18px;
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+}
+.social-share.flat .social-counter{
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding:  0 12px 0 2px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	color: #fff;
+}
+
+.social-share.flat li.facebook a{background-color: #607bb3;}
+.social-share.flat li.twitter a{background-color: #53c4ee;}
+.social-share.flat li.google a{background-color: #e74b32;}
+.social-share.flat li.vkontakte a{background-color: #5894cc;}
+.social-share.flat li.pinterest a{background-color: #cc2127;}
+.social-share.flat li.odnoklassniki a{background-color: #f48420;}
+.social-share.flat li.mailru a{background-color: #004e9c;}
+.social-share.flat li.linkedin a{background-color: #007ab9;}
+.social-share.flat li.reddit a{background-color: #ff4500;}
+.social-share.flat li.tumblr a{background-color: #395976;}

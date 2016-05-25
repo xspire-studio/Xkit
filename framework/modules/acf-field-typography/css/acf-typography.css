@@ -1,0 +1,39 @@
+.acf-field[data-type='typography'] .acf-typography-preview .acf-typography-field-label {
+	text-align: left;
+}
+.acf-field[data-type='typography'] .acf-typography-preview-font {
+	text-align: center;
+	width: 93%;
+	/*display:block;*/
+	padding: 20px;
+	border: solid 1px #ddd;
+	border-radius: 3px;
+	background: #f9f9f9;
+	line-height: 10%;
+}
+.acf-field[data-type='typography'] .acf-typography-subfield {
+	float: left;
+	width: 33%;
+	margin-bottom: 10px;
+}
+.acf-field[data-type='typography'] .acf-typography-field-label {
+	font-weight: 600;
+	line-height: 250%;
+}
+.acf-field[data-type='typography'] .select2-container,
+.acf-field[data-type='typography'] .acf-typography-field-font-size,
+.acf-field[data-type='typography'] .acf-typography-field-line-height {
+	display: block;
+	width: 80%;
+}
+.acf-field[data-type='typography'] .acf-typography-font-weight .font-weight {
+	display: block !important;
+	width: 80%;
+}
+.acf-field[data-type='typography'] .clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.acf-field[data-type='typography'] .clearfix:after {
+	clear: both;
+}

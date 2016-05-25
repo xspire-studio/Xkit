@@ -1,0 +1,245 @@
+{
+    "key": "group_567eb309c435c",
+    "title": "Archive Options: Portfolio",
+    "fields": [
+        {
+            "key": "field_5732f151817f5",
+            "label": "Show \/ Hide Options",
+            "name": "archive_options",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_5732f16d817f6",
+            "label": "",
+            "name": "",
+            "type": "separator",
+            "instructions": "<span>NOTICE:<\/span> Alternative settings. These settings override options on Theme Options!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "style_css": "{\r\n\tpadding: 2px 0 !important;\r\n}\r\n + .acf-field{\r\n\tborder-top: none !important;\r\n}\r\n.description {\r\n\tfont-size: 13px !important;\r\n\tmargin-top: 2px !important;\r\n\tpadding: 1px 0 !important;\r\n}\r\n.description span {\r\n\tfont-weight: 600 !important;\r\n}"
+        },
+        {
+            "key": "field_567eb32f94085",
+            "label": "Sidebar",
+            "name": "archive_sidebar",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "left-sidebar.png || Left sidebar",
+                "right": "right-sidebar.png || Right sidebar",
+                "without": "without-sidebar.png || Without sidebar"
+            },
+            "style_images": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_5734561cf780a",
+            "label": "Display Title?",
+            "name": "archive_title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_57345651f780b",
+            "label": "Display Breadcrumbs?",
+            "name": "archive_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_573448c5bb672",
+            "label": "Items Layout",
+            "name": "archive_posts_layout",
+            "type": "radio",
+            "instructions": "Use this option to force layout for this Portfolio.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "6_img": "grid-3-col.png || 3 columns",
+                "5_img": "gallery-5-img.png || 3 columns <br> 5 images",
+                "4_img": "grid-2-col.png || 2 columns",
+                "3_img": "gallery-3-img.png || 2 columns <br> 3 images"
+            },
+            "style_images": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "5_img",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_5734495ebb673",
+            "label": "Per Page",
+            "name": "archive_per_page",
+            "type": "number",
+            "instructions": "Number of Portfolio Items Per Page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 9,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5744480ac7bc8",
+            "label": "Pagination",
+            "name": "archive_pagination",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5732f151817f5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "load_more": "Ajax Load More Button",
+                "standart": "Standart Pagination",
+                "infinite": "Infinite Scroll Pagination",
+                "default": "Next\/Previous Buttons Pagination"
+            },
+            "default_value": [
+                "load_more"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "portfolio_cat"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1464092756
+}

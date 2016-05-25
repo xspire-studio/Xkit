@@ -1,0 +1,433 @@
+/* Lock Body */
+body.importing-content:before,
+body.importing-content #wpadminbar:before{
+	content: '';
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9991;
+	background: rgba( 255, 255, 255, 0.8 );
+}
+body.importing-content #wpadminbar:before{
+	position: absolute;
+	height: 32px;
+	z-index: 999999;
+}
+body.importing-content:after{
+	content: '';
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 100000;
+}
+body.importing-content .single-theme .theme-wrap{
+	z-index: 10000 !important;
+}
+
+
+/* Import page */
+#import-page{
+	padding-top: 10px;
+}
+#import-page .wp-filter-search{
+	display: none;
+}
+
+#import-page .import-page-content{
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+#import-page .theme-browser{
+	padding: 2% 20px 0px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	background: #f9f9f9;
+}
+
+/* Import notices */
+#import-page .update-nag{
+	padding: 1px 12px;
+	display: block;
+}
+
+/* Header box */
+#import-page .header-box {
+	background: #2F2F2F none repeat scroll 0 0;
+	border-bottom: 2px solid #00adef;
+	padding: 20px 0;
+}
+
+#import-page .header-box:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#import-page .header-box .logo {
+	float: right;
+	margin-right: 25px;
+	position: relative;
+	top: 2px;
+}
+
+#import-page .header-box  .logo img{
+	width: auto;
+	height: 36px;
+}
+
+#import-page .header-box  .head-title {
+	color: #fff;
+	float: left;
+	font-size: 20px;
+	font-weight: 600;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 25px;
+}
+
+#import-page .header-box  .head-title span{
+	margin-right: 12px;
+	font-size: 24px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#import-page .header-box  .title-count{
+	margin-left: 14px;
+	margin-top: 11px;
+	display: block;
+	float: left;
+}
+
+/* Import options */
+#import-page .import-options{
+	background: #f9f9f9;
+	padding: 0 10px;
+	border: 1px solid #ddd;
+	margin-top: 30px;
+}
+
+#import-page .import-options .form-table tr{
+	border-top: 1px solid #ddd;
+}
+
+#import-page .import-options .form-table th,
+#import-page .import-options .form-table td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#import-page .import-options .form-table th{
+	width: 220px;
+}
+
+#import-page .import-options .form-table th.warning-option{
+	color: #D54E21;
+}
+
+#import-page .import-options .form-table th span{
+	display: block;
+	color: #a2a9af;    
+	font-size: 13px;
+	font-style: italic;
+	font-weight: 400;
+	padding-top: 4px;
+}
+
+#import-page .import-options .form-table td{
+	vertical-align: middle;
+}
+
+/* Custom Import Set */
+#import-page .custom-import-set{
+	display: none;
+	padding: 10px 0;
+}
+
+#import-page .custom-import-set label{
+	display: block;
+}
+
+/* Single theme */
+#import-page .theme-browser .themes.single-theme  .theme-wrap{
+	border: 1px solid #ddd;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Import progress */
+#import-progress{
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	height: 20px;
+	margin: 26px 0 20px;
+	position: relative;
+	display: none;
+
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+#import-progress  h4{
+	position: absolute;
+	top: -46px;
+	left: 0px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#import-progress .progress-line{
+	background-color: #00A0D2;
+	height: 20px;
+	width: 0;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+
+	-webkit-transition: width 0.4s ease 0s;
+	transition: width 0.3s ease 0s;
+
+	-webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+	-moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+#import-progress .progress-title{
+	position:absolute;
+	top: 0;
+	right: 5px;
+	line-height: 20px;
+	font-size: 14px;
+	width: 100%;
+	text-align: right;
+	color: #23282d;
+	color: #fff;
+}
+
+#notices-form{
+	display: none;
+}
+
+/* Focus fix */
+#import-page .theme-browser .theme:focus .more-details{
+	opacity: 0;
+}
+
+#import-page .theme-browser .theme:hover .more-details{
+	opacity: 1;
+}
+
+#import-page .theme-browser.rendered .theme:focus .theme-screenshot img{
+	opacity: 1;
+}
+
+#import-page .theme-browser.rendered .theme:hover .theme-screenshot img {
+	opacity: 0.4;
+}
+
+#import-page .theme-browser .theme.focus .theme-actions,
+#import-page .theme-browser .theme:focus .theme-actions{
+	opacity: 0;
+}
+
+#import-page .theme-browser .theme:hover .theme-actions {
+	opacity: 1;
+}
+
+#import-page .theme-browser .theme:focus {
+	border-color: #dedede;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#import-page .theme-browser .theme:focus .theme-screenshot{
+	background: #fff;
+}
+
+#import-page .theme-browser .theme:hover .theme-screenshot {
+	background: #fff;
+}
+
+/* EXPORT PAGE */
+#import-page .export-wrap{
+	background: #f9f9f9;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	position: relative;
+}
+
+#import-page .export-wrap .additional-export{
+	display: none;
+}
+
+#import-page .export-wrap  .form-table{
+	margin: 0px;
+}
+
+#import-page .export-wrap .form-field input,
+#import-page .export-wrap .form-field textarea{
+	width: 100%;
+}
+
+#import-page .export-wrap .form-field th,
+#import-page .export-wrap .form-field td{
+	background: #fff;
+	padding: 26px 20px;
+	border-bottom: 1px solid #eee;
+	vertical-align: middle;
+}
+#import-page .export-wrap .form-field.last-child th,
+#import-page .export-wrap .form-field.last-child td{
+	border-bottom: 1px solid #e1e1e1;
+}
+
+#import-page .export-wrap .form-field th{
+	background: #f9f9f9;
+	border-right: 1px solid #e1e1e1;
+}
+
+#import-page .export-wrap  .form-field.form-title th{
+	padding: 0px 20px;
+	background: #00adef;
+	color: #fff;
+}
+
+#import-page .export-wrap  .form-field.form-title th h3{
+	color: #fff;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 1.2em;
+}
+
+#import-page .export-wrap  .form-actions{
+	padding: 16px 20px;
+	border-top: 1px solid #e1e1e1; 
+	text-align: right;
+}
+
+#import-page .export-wrap  .form-actions .button{
+	background: #23282d none repeat scroll 0 0;
+	border: medium none;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 25px;
+	height: auto;
+	line-height: 1.2em;
+
+	text-shadow: none !important;
+
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+#import-page .export-wrap  .form-actions .button:hover{
+	opacity: 0.9;
+}
+
+/* styled file */
+#import-page .styled-file{
+	max-width: 290px;
+	border: 1px solid #DDDDDD;
+	position: relative;
+	height: 28px;
+	padding: 0 0 0 6px;
+	cursor: pointer;
+	text-align: left;
+}
+#import-page .styled-file *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#import-page .styled-file input[type="file"]{
+	cursor: pointer;
+	height: 30px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+#import-page .styled-file .file-label{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding: 0 2px;
+	text-align: left;
+	vertical-align: middle;
+	width: 80%;
+	position: relative;
+	z-index: 2;
+}
+
+#import-page .styled-file .select-button {
+	background: #3498DB;
+	border: none;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	height: 30px;
+	padding: 0 12px;
+	font-size: 13px;
+	color: #FFFFFF;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 3;
+}
+
+#import-page .styled-file .select-button:before{
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: 1px;
+	width: 8px;
+	height: 28px;
+	background: #fff;
+}
+
+#import-page .styled-file:hover .select-button {
+	background: #00ADEF;
+}
+
+/* ADAPTIVE */
+@media (max-width: 767px) {
+
+	#import-page .header-box  .logo{
+		display: none;
+	}
+
+	#import-page .header-box  .head-title{
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	#import-page .export-wrap .form-actions{
+		text-align: center;
+	}
+
+}
