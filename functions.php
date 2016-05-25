@@ -21,6 +21,8 @@ echo 'Update sasha';
 echo 'Update plx';
 
 
+echo 'Update sashaавпвапав';
+
 /*
  * LOAD FRAMEWORK
  */
