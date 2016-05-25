@@ -14,15 +14,6 @@ define( 'XKIT_THEME_VERSION', '1.0' );
 define( 'XKIT_THEME_DEBUG', true );
 
 
-echo 'Updated upstream';
-
-echo 'Update sasha';
-
-echo 'Update plx';
-
-
-echo 'Update sashaавпвапав';
-
 /*
  * LOAD FRAMEWORK
  */
@@ -33,9 +24,7 @@ require_once( get_template_directory() . '/framework/framework.php' );
  * THEME START
  */
 class Xkit_Theme extends Xkit {
-echo '3333333333333';
 
-echo '44444444';
 	public function init() {
 
 		define( 'XKIT_OPTIONS_MODULE_ENABLE', true );
@@ -74,9 +63,6 @@ echo '44444444';
 			remove_action( 'set_current_user', 'bbp_setup_current_user' );
 			add_action( 'init', 'bbp_setup_current_user', 10 );
 		}
-		
-		
-		echo 111111111111111111111111;
 
 
 		/* CORE */
